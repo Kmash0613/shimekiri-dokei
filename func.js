@@ -109,7 +109,7 @@ var output_date_date=+output_date.getDate();
   //window.alert(holiday_name);
   if(holiday_name!==''){date_add=1;
 //朝イチ扱いに
-output_time_txt="10:00:00";
+output_time_txt="09:30:00";
 };
     
   output_date.setDate(output_date.getDate()+Number(date_add));
