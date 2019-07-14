@@ -1,4 +1,15 @@
 @charset "UTF-8";
+.check_wrap {
+  font-size: 3vw;
+  display: block;
+  margin: 5vw auto;
+  line-height: 1; }
+  .check_wrap input {
+    line-height: 3vw; }
+  .check_wrap span {
+    display: inline-block;
+    text-indent: 1em; }
+
 select {
   outline: none;
   -moz-appearance: none;
@@ -248,7 +259,7 @@ span#output_time {
     line-height: 8vh; }
 
   p#output_wrap {
-    margin: 4vh auto; }
+    margin: 2vh auto; }
 
   span#output_date {
     font-size: 4vh;
@@ -259,6 +270,10 @@ span#output_time {
     font-weight: bold; }
 
   #allow {
-    font-size: 3vh; } }
+    font-size: 3vh; }
+
+  .check_wrap {
+    margin: 3vh auto;
+    font-size: 2vh; } }
 
 /*# sourceMappingURL=style.css.map */

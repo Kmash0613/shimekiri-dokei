@@ -73,6 +73,11 @@ $("#submit").click(function(){
     output_date.setDate(date_today.getDate()+Number(input_date)+Number(date_add));
 
 //ここからループ？
+//チェック判定
+if($('input#chk_holiday').prop('checked')){
+  //window.alert("チェックボックスON");
+  //チェックされていた場合
+
 
  //休日判定：日なら+1日、土なら+2日;
  var output_date_day = output_date.getDay() ;	// 曜日(数値)
@@ -112,7 +117,9 @@ output_time_txt="09:30:00";
 };
     
   output_date.setDate(output_date.getDate()+Number(date_add));
-    
+
+  //条件終了
+}
 ////ここまでループ
    
     

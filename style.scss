@@ -7,6 +7,20 @@ $key1:#186ad4;
 
 
 //reset
+
+
+.check_wrap{
+font-size: 3vw;
+display: block;
+margin: 5vw auto;
+line-height: 1;
+input{line-height: 3vw;}
+span{
+  display: inline-block;
+  text-indent:1em;
+}
+
+}
 select{
     outline:none;
     -moz-appearance: none;
@@ -315,7 +329,7 @@ display: none;
           line-height: 8vh;
     }
 p#output_wrap{
-    margin: 4vh auto;
+    margin: 2vh auto;
 }
 
     span#output_date{
@@ -332,5 +346,10 @@ p#output_wrap{
         
         }
 
+        .check_wrap{
+          margin: 3vh auto;
+          font-size: 2vh;
+          
+          }
 
 }
