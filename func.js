@@ -25,7 +25,7 @@ var database_time = {
     "夜め":"22:00:00",
     "夜遅め":"23:00:00",
     "終電までには":"24:00:00",
-    "中":"10:00:00"
+    "中":"09:30:00"
 
 
     };
@@ -82,7 +82,7 @@ $("#submit").click(function(){
  if(output_date_day=='SUN'){
      date_add=1;
      //朝イチ扱いに
-     output_time_txt="00:10:00";
+     output_time_txt="00:09:30";
     }else{
     if(output_date_day=='SAT'){date_add=2;
     //朝イチ扱いに
