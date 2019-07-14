@@ -157,3 +157,9 @@ output_time_txt="09:30:00";
    
 
 
+$("select").change(function() {
+  $("a#gc").fadeOut(200);
+  $("i").fadeOut(200);
+  $("#output_wrap").fadeOut(200);
+
+})

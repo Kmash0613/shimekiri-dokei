@@ -221,7 +221,9 @@ span#output_time {
       div#select-wrapper .select-wrap select {
         height: 6vh;
         line-height: 5vh;
-        font-size: 3vh; }
+        font-size: 3vh;
+        text-indent: 0.5em;
+        padding-left: 0; }
     div#select-wrapper .date {
       width: 48% !important; }
     div#select-wrapper .time {
