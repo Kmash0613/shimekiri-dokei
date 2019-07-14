@@ -10,11 +10,11 @@ $key1:#186ad4;
 select{
     outline:none;
     -moz-appearance: none;
-    text-indent: 0.5em;
+    text-indent: 0.5em*2;
     text-overflow: '';
     background: none transparent;
     vertical-align: middle;
-    font-size: 3vw;
+    font-size: 3vw*2;
     color: inherit;
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -22,13 +22,14 @@ select{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    height: 10vw;
-    padding: 8pvw 12vw;
-    border:1px solid $white;
+    height: 10vw*2;
+    padding: 8vw*2 12vw*2;
+    border:1px*2 solid $white;
     text-align: center;
-    width:100%;
-    border-radius:3px;
+    width:100%*2;
+    border-radius:3px*2;
     font-weight:bold;
+    transform: scale(0.5);
   
     
 }
