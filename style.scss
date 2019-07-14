@@ -67,15 +67,25 @@ select:-moz-focusring {
   body{
       
     background: $black;
-    //background-image:url(./bg.jpg);
     background-size:cover; 
     padding:10vw;
     min-height: 100%;
       
   }
   h1{
+    text-indent: 1em;
       font-size: 5vw;
       margin-bottom:10vw;
+      letter-spacing:1em;
+      text-align: center;
+      //width:55vw;
+      span{
+        font-size: 3vw;
+        letter-spacing:0.25em;
+        text-indent:0.25em;
+        text-align:justify;
+        font-weight: normal;
+      }
   }
 
   h2{
@@ -176,7 +186,11 @@ display: none;
        
     }
     h1{font-size:3vh;
-        margin-bottom: 5vh;}
+        margin-bottom: 5vh;
+        span{
+          font-size: 2vh;
+        }
+      }
     h2#clock_time{font-size:10vh;}
     span#now{font-size:3vh;}
     #all_wrap{
