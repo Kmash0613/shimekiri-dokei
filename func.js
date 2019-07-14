@@ -170,3 +170,10 @@ $("select").change(function() {
   $("#output_wrap").fadeOut(200);
 
 })
+
+$("#chk_holiday").change(function() {
+  $("a#gc").fadeOut(200);
+  $("i").fadeOut(200);
+  $("#output_wrap").fadeOut(200);
+
+})
