@@ -159,7 +159,9 @@ span#output_time {
   p.description {
     letter-spacing: 0.4em;
     text-indent: 0.4em;
-    margin-bottom: 2vh; }
+    margin-bottom: 2vh;
+    -webkit-justify-content: space-between;
+    justify-content: space-between; }
     p.description span {
       font-size: 2vh !important;
       width: 48%;
