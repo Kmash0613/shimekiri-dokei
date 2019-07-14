@@ -101,6 +101,21 @@ select:-moz-focusring {
     
 
   }
+
+p.description{
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 0.4em;
+  text-indent: 0.4em;
+  margin-bottom:2vw;
+  span{
+    font-size: 2vw;
+    width:38vw;
+    display: block;
+    font-weight:bold;
+  }
+  
+}
 div#select-wrapper{
 
     display: flex;
@@ -109,7 +124,7 @@ div#select-wrapper{
 
     div.date{width: 38vw;}
     div.time{width: 38vw;}
-    
+    span{display: block}
     
 
 }
@@ -186,6 +201,21 @@ display: none;
     *{
        
     }
+
+    p.description{
+  
+      letter-spacing: 0.4em;
+      text-indent: 0.4em;
+      margin-bottom:2vh;
+      span{
+        font-size: 2vh !important;
+        width:48%;
+        display: block;
+        font-weight:bold;
+      }
+      
+    }      
+
     h1{font-size:3vh;
         margin-bottom: 5vh;
         span{
@@ -239,7 +269,7 @@ display: none;
   pointer-events: none;
 }
 
-            
+  
            
     select{
         height: 6vh;
