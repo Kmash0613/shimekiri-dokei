@@ -86,7 +86,7 @@ $("#submit").click(function(){
     }else{
     if(output_date_day=='SAT'){date_add=2;
     //朝イチ扱いに
-    output_time_txt="00:10:00";
+    output_time_txt="00:09:30";
     }else{date_add=0};
 
 }
