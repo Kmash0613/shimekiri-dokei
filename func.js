@@ -30,7 +30,7 @@ var database_time = {
 
     };
 //今日を定義
-var date_today=new Date("2019/7/11");
+var date_today=new Date();
 
 set_date_year=date_today.getFullYear();
     set_date_month=date_today.getMonth()+1;
