@@ -1,0 +1,223 @@
+@charset "UTF-8";
+select {
+  outline: none;
+  -moz-appearance: none;
+  text-indent: 0.5em;
+  text-overflow: '';
+  background: none transparent;
+  vertical-align: middle;
+  font-size: 3vw;
+  color: inherit;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 10vw;
+  padding: 8pvw 12vw;
+  border: 1px solid #f0f0f0;
+  text-align: center;
+  width: 100%;
+  border-radius: 3px;
+  font-weight: bold; }
+
+select option {
+  background-color: none;
+  color: #f0f0f0;
+  display: block;
+  width: 100%; }
+
+select::-ms-expand {
+  display: none; }
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #828c9a; }
+
+* {
+  font-family: 'Roboto', "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #f0f0f0; }
+
+html {
+  min-height: 100%; }
+
+body {
+  background: #0e192c;
+  background-size: cover;
+  padding: 10vw;
+  min-height: 100%; }
+
+h1 {
+  font-size: 5vw;
+  margin-bottom: 10vw; }
+
+h2 {
+  font-size: 15vw; }
+
+hr {
+  border: none;
+  height: 1px;
+  background: #f0f0f0;
+  margin: 8vw auto; }
+
+div#select-wrapper {
+  display: flex;
+  align-content: center;
+  justify-content: space-between; }
+  div#select-wrapper div.date {
+    width: 38vw; }
+  div#select-wrapper div.time {
+    width: 38vw; }
+
+.select-wrap {
+  position: relative;
+  display: block; }
+
+.select-wrap:before {
+  z-index: 1;
+  position: absolute;
+  right: 15px;
+  line-height: 10vw;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  pointer-events: none; }
+
+#submit {
+  font-weight: bold;
+  border-radius: 3px;
+  background: #f0f0f0;
+  font-size: 5vw;
+  display: block;
+  color: #0e192c;
+  width: 80vw;
+  height: 12vw;
+  margin: 5vw auto;
+  line-height: 12vw; }
+
+a#gc {
+  font-weight: bold;
+  border-radius: 3px;
+  background: #186ad4;
+  font-size: 5vw;
+  display: block;
+  color: #f0f0f0;
+  width: 80vw;
+  height: 12vw;
+  line-height: 12vw;
+  text-decoration: none;
+  margin: 5vw auto;
+  display: block; }
+
+span#now {
+  font-size: 4vw; }
+
+p#output_wrap {
+  margin: 5vw auto; }
+
+span#output_date {
+  font-size: 4vw;
+  font-weight: bold; }
+
+span#output_time {
+  font-size: 8vw;
+  font-weight: bold; }
+
+#allow {
+  font-size: 5vw;
+  display: none; }
+
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: 3vh;
+    margin-bottom: 5vh; }
+
+  h2#clock_time {
+    font-size: 10vh; }
+
+  span#now {
+    font-size: 3vh; }
+
+  #all_wrap {
+    width: 50vw;
+    margin: 0 auto; }
+
+  body {
+    padding: 4vh; }
+
+  hr {
+    height: 1px;
+    zoom: 1;
+    margin: 4vh 0; }
+
+  div#select-wrapper {
+    display: flex; }
+    div#select-wrapper .select-wrap:before {
+      z-index: 1;
+      position: absolute;
+      right: 15px;
+      line-height: 6vh;
+      content: "\f107";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      pointer-events: none; }
+    div#select-wrapper .select-wrap {
+      height: 6vh;
+      line-height: 5vh;
+      border: none;
+      font-size: 3vh; }
+      div#select-wrapper .select-wrap .select-wrap:before {
+        z-index: 1;
+        position: absolute;
+        right: 15px;
+        line-height: 10vw;
+        content: "\f107";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        pointer-events: none; }
+      div#select-wrapper .select-wrap select {
+        height: 6vh;
+        line-height: 5vh;
+        font-size: 3vh; }
+    div#select-wrapper .date {
+      width: 48% !important; }
+    div#select-wrapper .time {
+      width: 48% !important; }
+
+  #submit {
+    font-size: 3vh;
+    display: block;
+    color: #0e192c;
+    width: 20vw;
+    height: 8vh;
+    margin: 4vh auto;
+    line-height: 8vh; }
+
+  a#gc {
+    font-size: 3vh;
+    display: block;
+    color: #f0f0f0;
+    width: 20vw;
+    height: 8vh;
+    margin: 4vh auto;
+    line-height: 8vh; }
+
+  p#output_wrap {
+    margin: 4vh auto; }
+
+  span#output_date {
+    font-size: 4vh;
+    font-weight: bold; }
+
+  span#output_time {
+    font-size: 8vh;
+    font-weight: bold; }
+
+  #allow {
+    font-size: 3vh; } }
+
+/*# sourceMappingURL=style.css.map */
