@@ -29,6 +29,7 @@ var database_time = {
 
     };
 //今日を定義
+//var date_today=new Date('2019/07/11');
 var date_today=new Date();
 
 set_date_year=date_today.getFullYear();
@@ -83,12 +84,15 @@ if($('input#chk_holiday').prop('checked')){
  var output_date_day = output_date.getDay() ;	// 曜日(数値)
  var output_date_day = [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"  ][output_date_day] ;	// 曜日(日本語表記)
 //window.alert(output_date_day );
+//window.alert('曜日'+output_date_day);//////////////
  if(output_date_day=='SUN'){
      date_add=1;
+     //window.alert('日曜判定：day１追加');//////////////
      //朝イチ扱いに
      output_time_txt="00:09:30";
     }else{
     if(output_date_day=='SAT'){date_add=2;
+      //window.alert('土曜判定：day2追加');//////////////
     //朝イチ扱いに
     output_time_txt="00:09:30";
     }else{date_add=0};
@@ -111,12 +115,14 @@ var output_date_date=+output_date.getDate();
 
   var holiday_name = Holiday.getHolidayName(new Date(output_date_txt));
   //window.alert(holiday_name);
-  if(holiday_name!==''){date_add=1;
+  if(holiday_name!==''){date_add++;
+    //window.alert('祝日判定：day1追加');//////////////
 //朝イチ扱いに
 output_time_txt="09:30:00";
 };
     
-  output_date.setDate(output_date.getDate()+Number(date_add));
+  output_date.setDate(output_date.getDate());
+  /////ここにdate_add足す必要ある？
 
   //条件終了
 }
@@ -160,6 +166,8 @@ output_time_txt="09:30:00";
     $("a#gc").attr("href", a_href).fadeIn();
     $("i").fadeIn();
     $("#output_wrap").fadeIn();
+
+    window.alert(date_add);
 });
    
 
