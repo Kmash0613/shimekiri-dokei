@@ -167,7 +167,7 @@ output_time_txt="09:30:00";
     $("i").fadeIn();
     $("#output_wrap").fadeIn();
 
-    window.alert(date_add);
+    //window.alert(date_add);/////////////////
 });
    
 
