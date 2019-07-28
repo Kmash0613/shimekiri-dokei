@@ -25,6 +25,7 @@ var database_time = {
     "夜遅め":"23:00:00",
     "終電までには":"23:59:59",
     "テッペンまわる頃":"01:00:00",
+    "夜中":"05:00:00",
     "中":"09:30:00"
 
 
@@ -69,6 +70,7 @@ $("#submit").click(function(){
      var date_add=0;
      if (input_time=="中"){date_add=date_add+1};
      if (input_time=="テッペンまわる頃"){date_add=date_add+1};
+     if (input_time=="夜中"){date_add=date_add+1};
 
      
      
