@@ -90,12 +90,12 @@ if($('input#chk_holiday').prop('checked')){
 //window.alert(output_date_day );
 //window.alert('曜日'+output_date_day);//////////////
  if(output_date_day=='SUN'){
-     date_add=1;
+     date_add++;
      //window.alert('日曜判定：day１追加');//////////////
      //朝イチ扱いに
      output_time_txt="00:09:30";
     }else{
-    if(output_date_day=='SAT'){date_add=2;
+    if(output_date_day=='SAT'){date_add=date_add+2;
       //window.alert('土曜判定：day2追加');//////////////
     //朝イチ扱いに
     output_time_txt="00:09:30";
@@ -103,7 +103,6 @@ if($('input#chk_holiday').prop('checked')){
 
 }
 
-output_date.setDate(output_date.getDate()+Number(date_add));
 
 ////
 
@@ -119,9 +118,11 @@ var output_date_date=+output_date.getDate();
 
   var holiday_name = Holiday.getHolidayName(new Date(output_date_txt));
   //window.alert(holiday_name);
-  if(holiday_name!==''){date_add++;
-    //window.alert('祝日判定：day1追加');//////////////
+  if(holiday_name!==''){
+    date_add++;
+    //window.alert('祝日判定追加'+date_add+'日');//////////////
 //朝イチ扱いに
+
 output_time_txt="09:30:00";
 };
     
@@ -133,6 +134,7 @@ output_time_txt="09:30:00";
 ////ここまでループ
    
     
+output_date.setDate(output_date.getDate()+Number(date_add));
 
     
     
